@@ -10,7 +10,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /VJ-FILTER-BOT
-WORKDIR /VJ-FILTER-BOT
+RUN mkdir /AUTO-FILTER-VM-BOT
+WORKDIR /AUTO-FILTER-VM-BOT
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
